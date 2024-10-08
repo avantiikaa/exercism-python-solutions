@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #0073e6;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004080;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    margin: 0 20px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    color: #ffc107;
+}
+
+/* Homepage */
+.hero-section {
+    background-image: url('hero-bg.jpg'); /* You can replace this with an image path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 24px;
+}
+
+.call-to-action {
+    background-color: #0073e6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.call-to-action:hover {
+    background-color: #005bb5;
+}
+
+/* Sections */
+.section {
+    padding: 60px;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Exercise List */
+.exercises {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.exercise-card {
+    background-color: #e6f7ff;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid #cce0ff;
+}
+
+.exercise-card h3 {
+    font-size: 24px;
+    color: #004080;
+}
+
+.exercise-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Solution Section */
+.solution {
+    background-color: #f0f8ff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 4px solid #0073e6;
+    font-family: 'Courier New', monospace;
+}
+
+.solution pre {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* Contribute */
+.contribute {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+}
+
+.contribute h2 {
+    color: #0073e6;
+}
+
+.contribute p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contribute button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contribute button:hover {
+    background-color: #005bb5;
+}
+
+/* Community and Resources */
+.community, .resources {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.community h2, .resources h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.resource-list, .community-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li, .community-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.resource-list li a, .community-list li a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.resource-list li a:hover, .community-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #004080;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ffc107;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .exercise-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+}
