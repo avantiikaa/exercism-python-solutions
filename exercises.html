@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Exercises</title>
+</head>
+<body>
+    <h1>Python Exercises</h1>
+    <ul>
+        {% for exercise in exercises %}
+            <li>
+                <a href="{{ url_for('exercise_detail', id=exercise['id']) }}">{{ exercise['title'] }}</a>
+                - Difficulty: {{ exercise['difficulty'] }}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ exercise['title'] }} - Details</title>
+</head>
+<body>
+    <h1>{{ exercise['title'] }}</h1>
+    <p>{{ exercise['description'] }}</p>
+
+    <!-- Submitted Solutions Section -->
+    <h3>Submitted Solutions:</h3>
+    <ul>
+        {% for sol in exercise['solutions'] %}
+            <li>
+                <strong>By {{ sol['author'] }}:</strong>
+                <pre>{{ sol['solution'] }}</pre>
+            </li>
+        {% endfor %}
+    </ul>
+
+
+
+    <form action="/submit_solution" method="POST">
+        <textarea name="solution" rows="10" cols="50" placeholder="Submit your solution here"></textarea><br>
+        <input type="hidden" name="exercise_id" value="{{ exercise['id'] }}">
+        <button type="submit">Submit Solution</button>
+    </form>
+</body>
+</html>
